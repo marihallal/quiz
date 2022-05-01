@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-height, initial-scale=1.0">
+    <title>Ciclo da Fome</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <meta name="viewport" content="width=device-height, initial-scale=1.0">
+    <div class="header">
+        <p>Ciclo da Fome</p>
+    </div>
+    <div class="paragrafo">
+        <p>A <b>fome</b> no Brasil é cíclica e cercada de mitos. Apesar de ter conseguido amenizar o problema no início do século, o fantasma da <b>insegurança alimentar</b> sempre assombrou os brasileiros - e, recentemente, está se tornando ainda mais real. Para lidar com o problema é necessário <b>informação</b>. Você sabe qual faixa etária mais morre de desnutrição no Brasil? Qual região mais sofre com a falta de comida? Descubra no nosso quiz.</p>
+    </div>
+
+    <div class="container">
+        <div id="question-container" class="hide">
+            <div id="question"></div>
+            <div id="answer-buttons" class="btn-grid">
+                <button class="btn"> Answer 1</button>
+                <button class="btn"> Answer 2</button>
+                <button class="btn"> Answer 3</button>
+                <button class="btn"> Answer 4</button>
+            </div>
+            <div class="score">
+                <p>Você fez <span id="right-answers"></span> pontos</p>
+            </div>
+            <div id="explain"></div>
+        </div>
+        <div class="controls">
+            <button id="start-btn" class="start-btn btn">Começar</button>
+            <button id="next-btn" class="next-btn btn hide">Próxima</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
