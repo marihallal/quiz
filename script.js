@@ -5,6 +5,8 @@ const questionElement = document.getElementById('question');
 const answerButtonsElement = document.getElementById('answer-buttons');
 const explainElement = document.getElementById('explain');
 const grafElement = document.getElementById('grafico');
+const rAnswer = document.getElementById('right-answers');
+
 let shuffledQuestions, currentQuestionIndex;
 let quizScore =0;
 
@@ -81,7 +83,7 @@ function selectAnswer(e) {
     }
     explainElement.classList.remove('hide');
     grafElement.classList.remove("hide");
-    document.getElementById('right-answers').innerHTML = quizScore;
+    rAnswer.innerHTML = quizScore;
 }
 
 function setStatusClass(element, correct) {
@@ -103,7 +105,7 @@ const questions = [
         question: 'Entre 2008 e 2018 o percentual da população desnutrida no Brasil…',
         explain: "O percentual da população desnutrida no Brasil permaneceu em 2,5% durante os anos de 2008 e 2018. No mesmo período, a média mundial caiu de 10,3% para 8,9%",
         media: "grafico.png",
-        grafico: "<iframe src='https://flo.uri.sh/visualisation/9690820/embed' title='Interactive or visual content' class='flourish-embed-iframe' frameborder='0' scrolling='yes' style='width:90%;height:500px;margin-left:4px;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe><div style='width:100%!;margin-top:4px!important;text-align:right!important;'><a class='flourish-credit' href='https://public.flourish.studio/visualisation/9690820/?utm_source=embed&utm_campaign=visualisation/9690820' target='_top' style='text-decoration:none!important'><img alt='Made with Flourish' src='https://public.flourish.studio/resources/made_with_flourish.svg' style='width:105px!important;height:16px!important;border:none!important;margin:0!important;'> </a></div>",
+        grafico: "<iframe src='https://flo.uri.sh/visualisation/9850675/embed' title='Interactive or visual content' class='flourish-embed-iframe' frameborder='0' scrolling='no' style='width:100%;height:600px;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe><div style='width:100%!;margin-top:4px!important;text-align:right!important;'><a class='flourish-credit' href='https://public.flourish.studio/visualisation/9850675/?utm_source=embed&utm_campaign=visualisation/9850675' target='_top' style='text-decoration:none!important'><img alt='Made with Flourish' src='https://public.flourish.studio/resources/made_with_flourish.svg' style='width:105px!important;height:16px!important;border:none!important;margin:0!important;'> </a></div>",
         answers : [
             { text: '...caiu pela metade', correct: false},
             { text: '...permaneceu estável', correct: true},
@@ -114,7 +116,7 @@ const questions = [
     {
         question: 'Na comparação entre 2000 e 2020, o número de <b>mortes por desnutrição</b> entre crianças com menos de 1 ano…',
         explain: 'O Brasil conseguiu reduzir significativamente a morte de crianças por desnutrição nas duas últimas décadas. Em 2000, foram registradas 1.462 mortes de bebês com menos de um ano de idade. Vinte anos depois o número caiu para 289.',
-        grafico: "<iframe src='https://flo.uri.sh/visualisation/9671655/embed' title='Interactive or visual content' class='flourish-embed-iframe' frameborder='0' scrolling='yes' style='width:90%;height:500px;margin-left:4px;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe><div style='width:100%!;margin-top:4px!important;text-align:right!important;'><a class='flourish-credit' href='https://public.flourish.studio/visualisation/9671655/?utm_source=embed&utm_campaign=visualisation/9671655' target='_top' style='text-decoration:none!important'><img alt='Made with Flourish' src='https://public.flourish.studio/resources/made_with_flourish.svg' style='width:105px!important;height:16px!important;border:none!important;margin:0!important;'> </a></div>",
+        grafico: "<iframe src='https://flo.uri.sh/visualisation/9850707/embed' title='Interactive or visual content' class='flourish-embed-iframe' frameborder='0' scrolling='no' style='width:100%;height:600px;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe><div style='width:100%!;margin-top:4px!important;text-align:right!important;'><a class='flourish-credit' href='https://public.flourish.studio/visualisation/9850707/?utm_source=embed&utm_campaign=visualisation/9850707' target='_top' style='text-decoration:none!important'><img alt='Made with Flourish' src='https://public.flourish.studio/resources/made_with_flourish.svg' style='width:105px!important;height:16px!important;border:none!important;margin:0!important;'> </a></div>",
         media: "grafico.png",
         answers: [
             { text: '...reduziu 80%', correct: true},
@@ -127,7 +129,7 @@ const questions = [
         question: 'Qual <b>faixa etária</b> concentra o maior número de mortes por desnutrição nos últimos 20 anos (2000 a 2020)?',
         explain: 'Ao contrário do que muitos pensam, os idosos são o grupo mais afetado pela desnutrição no Brasil. De acordo com o Sistema Único de Saúde, 46% das pessoas que morreram por desnutrição no período (2000-2020) tinham mais de 80 anos.',
         media: "grafico.png",
-        grafico: "<iframe src='https://flo.uri.sh/visualisation/9656254/embed' title='Interactive or visual content' class='flourish-embed-iframe' frameborder='0' scrolling='yes' style='width:90%;height:500px;margin-left:4px;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe><div style='width:100%!;margin-top:4px!important;text-align:right!important;'><a class='flourish-credit' href='https://public.flourish.studio/visualisation/9656254/?utm_source=embed&utm_campaign=visualisation/9656254' target='_top' style='text-decoration:none!important'><img alt='Made with Flourish' src='https://public.flourish.studio/resources/made_with_flourish.svg' style='width:105px!important;height:16px!important;border:none!important;margin:0!important;'> </a></div>",
+        grafico: "<iframe src='https://flo.uri.sh/visualisation/9850600/embed' title='Interactive or visual content' class='flourish-embed-iframe' frameborder='0' scrolling='no' style='width:100%;height:600px;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe><div style='width:100%!;margin-top:4px!important;text-align:right!important;'><a class='flourish-credit' href='https://public.flourish.studio/visualisation/9850600/?utm_source=embed&utm_campaign=visualisation/9850600' target='_top' style='text-decoration:none!important'><img alt='Made with Flourish' src='https://public.flourish.studio/resources/made_with_flourish.svg' style='width:105px!important;height:16px!important;border:none!important;margin:0!important;'> </a></div>",
         answers : [
             { text: 'Crianças até 1 ano', correct: false},
             { text: 'Crianças entre 5 e 9 anos', correct: false},
@@ -138,7 +140,7 @@ const questions = [
     {
         question: 'Qual o percentual de famílias Nordestinas e Sulistas, respectivamente, que afirmavam viver em <b>segurança alimentar</b> entre novembro e dezembro de 2020?',
         explain: "De acordo com a pesquisa 'Efeitos da pandemia na alimentação e na situação da segurança alimentar no Brasil', há uma grande desigualdade entre as regiões brasileiras quando o assunto é segurança alimentar. O Nordeste é o local onde há mais insegurança alimentar – estima-se que 73% dos habitantes estejam nessa situação. Em seguia vem o Norte (67,7%) e o Centro-Oeste. O Sudeste (53,5%) e o Sul (51,6%) são os que menos sofrem com falta de comida.",
-        grafico: "<iframe src='https://flo.uri.sh/visualisation/9670339/embed' title='Interactive or visual content' class='flourish-embed-iframe' frameborder='0' scrolling='yes' style='width:90%;height:500px;margin-left:4px;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe><div style='width:100%!;margin-top:4px!important;text-align:right!important;'><a class='flourish-credit' href='https://public.flourish.studio/visualisation/9670339/?utm_source=embed&utm_campaign=visualisation/9670339' target='_top' style='text-decoration:none!important'><img alt='Made with Flourish' src='https://public.flourish.studio/resources/made_with_flourish.svg' style='width:105px!important;height:16px!important;border:none!important;margin:0!important;'> </a></div>",
+        grafico: "<iframe src='https://flo.uri.sh/visualisation/9850710/embed' title='Interactive or visual content' class='flourish-embed-iframe' frameborder='0' scrolling='no' style='width:100%;height:600px;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe><div style='width:100%!;margin-top:4px!important;text-align:right!important;'><a class='flourish-credit' href='https://public.flourish.studio/visualisation/9850710/?utm_source=embed&utm_campaign=visualisation/9850710' target='_top' style='text-decoration:none!important'><img alt='Made with Flourish' src='https://public.flourish.studio/resources/made_with_flourish.svg' style='width:105px!important;height:16px!important;border:none!important;margin:0!important;'> </a></div>",
         media: "grafico.png",
         answers : [
             { text: '40,8% e 60,2%', correct: false},
@@ -151,7 +153,7 @@ const questions = [
         question: "Entre 2000 e 2020, o número de morte de idosos (acima de 60 anos) por desnutrição...",
         explain: 'O número de morte por desnutrição entre idosos é grande e continua crescendo. Em 2020, eles foram 56,5% das vítimas de doenças relacionadas ao problema.',
         media: "grafico.png",
-        grafico: "<iframe src='https://flo.uri.sh/visualisation/9689757/embed' title='Interactive or visual content' class='flourish-embed-iframe' frameborder='0' scrolling='yes' style='width:90%;height:500px;margin-left:4px;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe><div style='width:80%!;margin-top:4px!important;text-align:right!important;'><a class='flourish-credit' href='https://public.flourish.studio/visualisation/9689757/?utm_source=embed&utm_campaign=visualisation/9689757' target='_top' style='text-decoration:none!important'><img alt='Made with Flourish' src='https://public.flourish.studio/resources/made_with_flourish.svg' style='width:105px!important;height:16px!important;border:none!important;margin:0!important;'> </a></div>",
+        grafico: "<iframe src='https://flo.uri.sh/visualisation/9850713/embed' title='Interactive or visual content' class='flourish-embed-iframe' frameborder='0' scrolling='no' style='width:100%;height:600px;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe><div style='width:100%!;margin-top:4px!important;text-align:right!important;'><a class='flourish-credit' href='https://public.flourish.studio/visualisation/9850713/?utm_source=embed&utm_campaign=visualisation/9850713' target='_top' style='text-decoration:none!important'><img alt='Made with Flourish' src='https://public.flourish.studio/resources/made_with_flourish.svg' style='width:105px!important;height:16px!important;border:none!important;margin:0!important;'> </a></div>",
         answers : [
             { text: '...aumentou 20%', correct: false},
             { text: '...caiu 25%', correct: false},
